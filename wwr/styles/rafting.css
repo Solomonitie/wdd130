@@ -1,175 +1,269 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
 
 :root {
-        --primary-color: #BDC696;
-        --secondary-color: #775253;
-        --accent1-color: #351431;
-        --accent2-color: #D1D3C4;
-        --heading-font: 'Roboto';
-        
-        --paragraph-font:'open(sans)';
-        
+  --primary-color: #BDC696;
+  --secondary-color: #775253;
+  --accent1-color: #351431;
+  --accent2-color: #D1D3C4;
+  --heading-font: 'Roboto';
+  
+  --paragraph-font:'open(sans)';
+  
 
-      }
+}
 
 
 * {
-  margin: 0;
-  padding: 0;
+margin: 0;
+padding: 0;
 }
+
+.contact {
+display: grid;
+grid-template-columns: 1fr 2fr;
+width: 100%;
+
+}
+
+.contact h2, .employees h2 {
+background-color: var(--accent1-color);
+color: white;
+
+}
+
+
+.employees div {
+display: flex;
+justify-content: space-around;
+width: 100%;
+gap: 7px;
+}
+
+
+.employees figure {
+width: 33%;
+
+}
+
+.employees img {
+width: 100%;
+height: 50%;
+padding: 20px;
+}
+
+.contact section {
+margin: 0;
+
+}
+
 
 
 body {
-  width: 1200px;
-  margin: 0 auto;
+width: 1200px;
+margin: 0 auto;
 }
 
 
-h1, h2 {
-  font-family: var(--heading-font);
-  color: white;
+
+
+
+h1, h2 ,h3, h4, h5, h6 {
+font-family: var(--heading-font);
+color: white;
 }
 
 p {
-  padding: 25px;
+padding: 25px;
 
 }
 
 .social-media-link a {
-  text-decoration: none;
-  
-  
+text-decoration: none;
+
+
 }
 
 .social-media-link img {
-  width: 60px;
-  height: 60px;
-  
+width: 60px;
+height: 60px;
+
 }
 
 .social-media-link {
-  position: relative;
-  right: 25%;
-  
+position: relative;
+left: 25%;
+
 
 }
 
 
 a {
-   text-decoration: none;
-  
+text-decoration: none;
+
 }
 
 .hero {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .hero img {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
+
+
 
 
 
 h1 {
-  position: absolute;
-  top: 0rem;
-  background-color: rgba(20, 24, 53, 0.3);
+position: absolute;
+top: 0rem;
+background-color: rgba(20, 24, 53, 0.3);
 }
 
 
 .div-hero {
-  position: relative;
+position: relative;
 }
 
 
 .hero article img {
-  width: 200px;
-  float: right;
+width: 200px;
+float: right;
 
 }
 
 .hero article {
-  position: absolute;
-  max-width: 80%;
-  top: 4rem;
-  background-color: rgb(53, 20, 49, .6);
-  color: white;
+position: absolute;
+max-width: 80%;
+top: 4rem;
+background-color: rgb(53, 20, 49, .6);
+color: white;
 }
 
 
+header {
+
+display: grid;
+grid-template-columns: 150px auto;
+background-color: var(--primary-color);
+
+}
+
+header img {
+
+width: 150px;
+
+}
+
 nav { 
-  justify-content: center;
-  display: flex;
-  align-items: center;
+justify-content: center;
+display: flex;
+align-items: center;
 }
 
 nav a {
-  font-size: larger;
-  padding: 1rem 1rem;
-  color: black;
+font-size: larger;
+padding: 1rem 1rem;
+color: black;
 }
 
 nav a:hover {
-  background-color: var(--accent2-color);
+background-color: var(--accent2-color);
 }
 
 nav h1 {
-  color: black;
-  align-self: baseline;
+color: black;
+align-self: baseline;
 }
 
 h2 {
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
+max-width: 800px;
+margin: 20px auto;
+background-color: #fff;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+text-align: center;
 }
-   
- /* .history-section h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 10px;
+
+/* .history-section h2 {
+font-size: 24px;
+color: #333;
+margin-bottom: 10px;
 } */
+.history {
+display: grid;
+grid-template-columns: 2fr 1fr 2fr;
+padding: 2rem;
+grid-gap: 2rem;
+}
 
 .history h2 {
-  text-align: center;
-  grid-column: 1/4;
-  background-color: #351431;
-  color: white;
+text-align: center;
+grid-column: 1/4;
+background-color: #351431;
+color: white;
 
 }
 
 .history img {
-  width: 300px;
-  height: auto;
+width: 300px;
+height: auto;
 }
 
 footer {
+display: flex;
+padding: 25px;
+justify-content: center;
+background-color: var(--primary-color);
 
-  padding: 25px;
-  justify-content: right;
-  
 
-  
 }
 
+
+.adventure div {
+display: flex;
+flex-flow: row; 
+
+}
 
 .adventure figure img {
-  max-height: 100px;
-  
+max-height: 100px;
+
 }
 .adventure h2 {
-  background-color: #351431;
+background-color: #351431;
 }
 
-  
-footer a {
-  padding: 10px;
+.trip_info_table h2 {
+background-color: var(--primary-color);
+color: black;
+}
 
+table {
+border: 5px solid black;
+width: 100%;
+border-collapse: collapse; /* Optional: to remove space between borders */
+}
+
+.trips-wrapper {
+display: flex;
+flex-direction: row;
+
+
+}
+.trips-wrapper img {
+max-height: 300px;
+}  
+
+footer a {
+padding: 10px;
+
+}
+.call-action {
+padding: 25px;
 }
