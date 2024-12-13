@@ -1,19 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=nav, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <img src="images/logo.png" alt="my-logo" width="200"/>
-        <nav>
-          <a href="home.html">Home</a>
-          <a href="about.html">About Us</a>
-          <a href="trips.html">Trips</a>
-          <a href="contact.html">Contact Us</a>
-        </nav>
-      </header>
-</body>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="This is the Home page of the rafting site">
+        <meta name="author" content="Emmanuel Okoye">
+        <link rel="stylesheet" href="styles/rafting.css">
+        <title>White Water Rafting site | Home Page</title>
+    </head>
+    <body>
+        <header>
+            <img src="images/logo.png" alt="" class="logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            
+            <div class="hero-section">
+                <p>Your Journey Starts Here.</p>
+                <img src="images/hero.jpg" alt="Hero image ">
+            </div>
+                <form action ="thank-you.html" method="get">
+                        <label for="q1">1.Enter your user Name:</label>
+                        <input type="text" id="q1" name="q1" required>
+                        <br>
+                        <label for="q2">2.Enter your email Address</label>
+                        <textarea required id="q2" name="q2"></textarea> 
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <br><br>
+                        <button type="submit">Send request</button>
+                    </form>
+                    <div class="call-action">
+                        <a href="https://emmanuel2011-program.github.io/wdd130/wwr/trips.html">For your Bookings</a>
+                    </div>
+                    
+            
+    
+                <section class="employees">
+                    <h2>Our staff</h2>
+                    <div>
+                      <figure>
+                        <img src="images/employees1.jpg" alt="Customer support">
+                        <figcaption>Duty Call</figcaption>
+                      </figure>
+                      <figure>
+                        <img src="images/employees2.jpg" alt="Employee of the year">
+                        <figcaption>Sharing Idea</figcaption>
+                      </figure>
+                      <figure>
+                        <img src="images/employees3.jpg" alt="Chief Executive">
+                        <figcaption>Hallmark</figcaption>
+                      </figure>
+                        
+                    </div>
+                </section>
+                
+            
+        </main>
+        <footer>
+            <p>©2024 | Splash White Water Rafting Company | Solomon Itie</p>
+            <p>For More Details, View Our <a href="https://drive.google.com/file/d/1GOYiVK3YcwWztLFp1O0ZnGm9YGOqpLWo/view?usp=sharing" target="-blank">Home Page Wireframe</a>.</p>
+            <nav class="social-media-link">
+                <a href="https://www.iconfinder.com/search?q=facebook&price=free&license=gte__2">
+                    <img src="images/facebook.2.webp" alt="facebook">
+                </a>
+                <a href="https://www.iconfinder.com/icons/3225179/app_logo_media_popular_social_whatsapp_icon">
+                    <img src="images/watsapp.webp" alt="watsapp">
+                </a>
+                <a href="https://www.iconfinder.com/icons/3225191/app_instagram_logo_media_popular_social_icon">
+                    <img src="images/twitter.webp" alt="twitter"> 
+                </a>
+            </nav>
+        </footer>
+    </body>
 </html>
