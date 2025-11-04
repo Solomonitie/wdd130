@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+:root{
+    --image-width: 150px;
+    --image-hight:Auto;
+    --image-padding: 2px;
+}
 
 body{
     font-size: 16px;
@@ -34,10 +38,10 @@ h1{
 }
 
 img{
-    width: 150px;
-    height: auto;
+    width: var(--image-width);
+    height: var(--image-hight);
     border: 1px solid black;
-    padding: 2px;
+    padding: var(--image-padding);
     box-shadow: 0 0 30px gray;
 }
 
@@ -47,11 +51,11 @@ p{
 }
 
 main img{
-    width: 150px;
-    height: auto;
+    width: var(--image-width);
+    height: var(--image-hight);
     float: right;
     margin: 0 0 1rem 1rem;
-    padding: 2px;
+    padding: var(--image-padding);
     border: 1px solid steelblue;
     
 }
