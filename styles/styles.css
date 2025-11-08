@@ -1,43 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --image-width: 150px;
-    --image-hight:Auto;
+    --image-hight: Auto;
     --image-padding: 2px;
 }
 
-body{
+body {
     font-size: 16px;
     font-family: Roboto Arial, Helvetica, sans-serif;
 }
 
-nav{
+nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
 
 }
 
-main{
-    max-width: 640px;
+header,
+footer {
+    max-width: 840px;
+    margin: 0 auto 10px;
 }
 
-h1{
+h1 {
     color: darkblue;
     padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #333;
 
 }
 
-img{
+img {
     width: var(--image-width);
     height: var(--image-hight);
     border: 1px solid black;
@@ -45,27 +57,27 @@ img{
     box-shadow: 0 0 30px gray;
 }
 
-p{
+p {
     padding: 1rem;
 
 }
 
-main img{
+main img {
     width: var(--image-width);
     height: var(--image-hight);
     float: right;
     margin: 0 0 1rem 1rem;
     padding: var(--image-padding);
     border: 1px solid steelblue;
-    
+
 }
 
-aside{
+aside {
     color: #333;
     width: 30rem;
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid rgb(0, 0, 0/0,2);
+    border: 1px solid rgb(0, 0, 0/0, 2);
     text-align: center;
     line-height: 1.4;
     background-color: #eee;
@@ -73,19 +85,19 @@ aside{
 }
 
 
-aside img{
+aside img {
     width: 250px;
     height: auto;
 }
 
-aside h2{
+aside h2 {
     position: absolute;
     top: 88px;
     left: 180px;
 }
 
 /* Class selector */
-.box{
+.box {
     margin: 1rem;
     margin-top: 10px;
     padding: 1rem;
@@ -93,13 +105,37 @@ aside h2{
     color: #333;
 }
 
-.indent{
+.indent {
     padding-left: 2rem;
 }
 
+.grid {
+    display: grid;
+    align-items: center;
+}
 
-footer{
-    margin-top: 15px;
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+}
+
+header .grid footer {
+    max-width: 840;
+    margin: 0 auto;
+}
+
+
+footer {
+
     border-top: 1px solid #050505;
     text-align: center;
 }
