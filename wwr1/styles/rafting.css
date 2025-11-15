@@ -59,6 +59,7 @@ article {
     display: block;
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 h1 {
@@ -80,7 +81,8 @@ h1 {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr;
+    /* grid-template-columns: auto 1fr; */
+    grid-template-rows: auto 1fr;
     align-items: center;
     padding: 15px 40px;
     background-color: #005f73;
@@ -97,6 +99,7 @@ header {
 nav ul {
     display: flex;
     justify-content: flex-end;
+    /* flex-direction: row; */
     gap: 30px;
     list-style: none;
     margin: 0;
@@ -195,12 +198,16 @@ footer {
   display: grid;
   grid-template-columns: 1fr auto;
   align-items: center;
+  width: auto;
+  height: 110px;
   padding: 15px 40px;
   background-color: #b6c7f2;
 }
 
 footer p {
   font-size: 0.9rem;
+  
+  
 }
 
 

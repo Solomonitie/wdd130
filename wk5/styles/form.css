@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background: #fff8e1;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    margin:0 auto;
+    width: 650px;
+    text-align: center;
+    padding: 10px;
+    color: navy;
+}
+
+form {
+    margin:auto;
+    width: 650px;
+    padding: 20px;
+    border: 1px solid #333;
+    background: #eee;
+    border-radius: 5px;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap:.5rem;
+    border: 1px solid rgb(0, 0,0/0.2);
+    margin: 1rem;
+    padding: 1rem;
+
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    color: navy;
+}
+
+label, textarea,input, button, select {
+    font-family: Roboto Arial, Helvetica, sans-serif;
+}
+
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input, textarea, select {
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 3px;
+    font-size: .5rem;
+    width: 100%;
+}
