@@ -19,25 +19,135 @@ header a {
     text-decoration: none;
 }
 
-header, main, footer {
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
 
-h1, h2 {
+header {
+    background-color: steelblue;
+    display: grid;
+    margin-bottom: 5px;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+
+}
+
+header img {
+    width: 120px;
+}
+
+header nav {
+    justify-self: end;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0;
+}
+
+h1,
+h2 {
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+article {
     margin: 16px;
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
+section {
+    margin: 16px;
+    padding: 8px;
+
 }
 
-/* HERO */
+p {
+    margin: 16px;
+    padding: 8px;
+
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #555;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.history p {
+    margin: 0;
+    padding: 8px;
+}
+
+.history img {
+    width: 100%;
+}
+
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    align-items: center;
+}
+
+.adventure h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.adventure figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventure img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+
+}
+
+.socialmedia img {
+    width: 30px;
+}
+
 .hero {
     position: relative;
 }
@@ -63,13 +173,16 @@ nav, p, section, article {
 /* Hero article */
 .hero article {
     position: absolute;
+    color: green;
     bottom: 20px;
     left: 10%;
     right: 10%;
+    background-color: rgba(255, 255, 255, 0.85);
 
 }
 
 .hero article img {
     float: right;
     width: 125px;
+    margin-left: 15px;
 }
