@@ -13,12 +13,14 @@
 
         <form>
             <fieldset>
-                <legend>Contact Information</legend>
-                <label for="full Name">Full Name:</label>
-                <input type="text" id="fullname" name="fullname" required>
+                <div class="form-row">
+                    <label for="full Name">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                <div class="form-row"></div>
                 <label for="email">Email</label>
                 <input type="text" id="useremail" name="useremail">
-                <button type="submit">Submit </button>
+                </div>
             </fieldset>
             <!-- <label for="quantity">select Quantity</label>
             <select name="quantity" id="quantity">
@@ -28,19 +30,25 @@
             <!-- </select> -->
             <fieldset>
                 <legend>Question</legend>
-                <label for="browser">What is your favorite internet browser</label>
-                <select name="browser" id="browser">
-                    <option value="chrome">Chrome</option>
-                    <option value="firefox">Firefox</option>
-                    <option value="edge">Edge</option>
-                    <option value="brave">Brave</option>
-                    <option value="others">Others</option>
-                </select>
-                <label for="pet">Do have a household pet?</label>
-                <input type="checkbox" id="pet" name="pet">
+                <div class="form-row">
+                    <label for="browser">What is your favorite internet browser</label>
+                    <select name="browser" id="browser">
+                        <option value="chrome">Chrome</option>
+                        <option value="firefox">Firefox</option>
+                        <option value="edge">Edge</option>
+                        <option value="brave">Brave</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="pet">Do have a household pet?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <div class="form-row"></div>
                 <label for="feedback">List the places you have liveds:</label>
                 <textarea name="feedback" id="feedback" rows="4"
                   placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali "></textarea>
+                </div>
                 <button type="submit">Submit Poll</button>
             </fieldset>
 
