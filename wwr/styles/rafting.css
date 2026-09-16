@@ -1,6 +1,6 @@
 :root {
 
-    --border: 1px solid rgba(0, 0, 0/0.2);
+    --border: 1px solid rgba(0, 0, 0, 0.2);
     --body-font: Arial, Helvetica, sans-serif;
     --accent-color: black;
     --heading-font: Arial, Helvetica, sans-serif;
